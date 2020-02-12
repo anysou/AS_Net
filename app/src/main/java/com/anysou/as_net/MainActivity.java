@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity  {
         switchReMsg.setChecked(true);
         editTextShell = (EditText) findViewById(R.id.EditTextShell);
         textViewShell = (TextView) findViewById(R.id.textViewShell);
-        textViewShell.setMovementMethod(new ScrollingMovementMethod()); //textview要能滚动
+        textViewShell.setMovementMethod(new ScrollingMovementMethod()); //textview要能滚动 android:scrollbars="vertical"
 
         setMessageBus(); //设置消息总线
         getMessageBus("connect_change"); //获取网络变化信息"connect_change"
