@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity  {
         setMessageBus(); //设置消息总线
         getMessageBus("connect_change"); //获取网络变化信息"connect_change"
 
+        //==================  检测网络变化 ===================================================
         //API 21    android 5.0 Lollipop    棒棒糖
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
             // 5.0以下，动态注册广播接收，注意动态注册要销毁
